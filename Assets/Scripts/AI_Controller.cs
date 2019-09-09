@@ -43,6 +43,9 @@ public class AI_Controller : MonoBehaviour
     public Vector3 post;
     public PlayerController[] playersToWatch;
 
+    [Header("Location For Servers")]
+    public Transform barLocation;
+
     [Header("Variables to Adjust")]
     public float detectionDistance = 5;
 
@@ -66,6 +69,9 @@ public class AI_Controller : MonoBehaviour
                     break;
                 case Role.Vigil:
                     animator.runtimeAnimatorController = Resources.Load("AI_AnimatorController_Vigil") as RuntimeAnimatorController;
+                    break;
+                case Role.Server:
+                    animator.runtimeAnimatorController = Resources.Load("AI_AnimatorController_Server") as RuntimeAnimatorController;
                     break;
 
                 default:

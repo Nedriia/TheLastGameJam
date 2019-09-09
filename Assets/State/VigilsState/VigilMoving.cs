@@ -17,6 +17,7 @@ public class VigilMoving : StateMachine_Controller
         {
             Get_NavMeshAgent(animator).SetDestination(Get_Target());
             Get_OrientationPlayer();
+            Set_CharacterState(AI_Controller.State.Moving);
         }
         else
         {

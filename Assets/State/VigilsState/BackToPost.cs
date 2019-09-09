@@ -17,6 +17,7 @@ public class BackToPost : StateMachine_Controller
             //Reset Rotation so the Vigil don't look at the wall
             animator.SetBool("IsMoving", false);
             animator.SetBool("IsChecking", true);
+            Set_CharacterState(AI_Controller.State.Moving);
         }
     }
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
