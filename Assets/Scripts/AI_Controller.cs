@@ -73,7 +73,6 @@ public class AI_Controller : MonoBehaviour
                 case Role.Server:
                     animator.runtimeAnimatorController = Resources.Load("AI_AnimatorController_Server") as RuntimeAnimatorController;
                     break;
-
                 default:
                     role = Role.Dancer;
                     animator.runtimeAnimatorController = Resources.Load("AI_AnimatorController_Dancer") as RuntimeAnimatorController;
@@ -86,5 +85,10 @@ public class AI_Controller : MonoBehaviour
             NavMeshAgent nav_agent = gameObject.AddComponent<NavMeshAgent>();
             agent = nav_agent;
         }
+    }
+
+    public void Set_CharacterState(State value)
+    {
+        state = value;
     }
 }
