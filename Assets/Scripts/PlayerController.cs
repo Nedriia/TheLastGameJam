@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,8 +9,7 @@ public class PlayerController : MonoBehaviour
     Vector3 movement;
     float moveX, moveZ;
     public float speed;
-
-    public List<GameObject> CloseNPCs_List;
+    PlayerBehaviour playerBehaviour;
 
     public enum State
     {
@@ -25,32 +25,30 @@ public class PlayerController : MonoBehaviour
     }
     public PlayerNum playerNum;
 
+    public void Start()
+    {
+        playerBehaviour = GetComponent<PlayerBehaviour>();
+    }
+
     public void Update()
     {
         if (playerNum == PlayerNum.PlayerOne)
         {
-            if (Input.GetKeyDown(KeyCode.E) && CloseNPCs_List.Count > 0)
+            if (Input.GetKeyDown(KeyCode.E) && playerBehaviour.CloseObjects_List.Count > 0)
             {
-                KillingNPC();
+                if (playerBehaviour.closestObjectInteract.layer == 11)
+                {
+                    playerBehaviour.InteractionNPC();
+                }
             }
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.I) && CloseNPCs_List.Count > 0)
+            if (Input.GetKeyDown(KeyCode.I) && playerBehaviour.CloseObjects_List.Count > 0)
             {
-                KillingNPC();
+                playerBehaviour.InteractionNPC();
             }
         }
-    }
-
-    public void KillingNPC()
-    {
-        /*GameObject killedNpc = CloseNPCs_List[0];
-        CloseNPCs_List.RemoveAt(0);
-        Destroy(killedNpc);*/
-        GameObject killedNpc = CloseNPCs_List[0];
-        killedNpc.GetComponent<AI_Controller>().Set_CharacterState(AI_Controller.State.Dead);
-        killedNpc.GetComponent<Animator>().SetBool("isDead", true);
     }
 
     // Update is called once per frame
@@ -75,22 +73,9 @@ public class PlayerController : MonoBehaviour
         movement.Set(movementX, 0, movementZ);
         movement = movement.normalized;
 
-        transform.Translate(movement * speed * Time.deltaTime);
+        //transform.Translate(movement * speed * Time.deltaTime);
+        gameObject.GetComponent<NavMeshAgent>().velocity = movement * speed;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "NPC")
-        {
-            CloseNPCs_List.Add(other.gameObject);
-        }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "NPC")
-        {
-            CloseNPCs_List.Remove(other.gameObject);
-        }
-    }
 }

@@ -85,10 +85,33 @@ public class AI_Controller : MonoBehaviour
             NavMeshAgent nav_agent = gameObject.AddComponent<NavMeshAgent>();
             agent = nav_agent;
         }
+
+        if (playersToWatch == null)
+        {
+            playersToWatch = new PlayerController[2] { GameObject.Find("PlayerOne").GetComponent<PlayerController>(), GameObject.Find("PlayerOne").GetComponent<PlayerController>() };
+        }
+        if (playersToWatch.Length <= 1)
+        {
+            
+        }
     }
 
     public void Set_CharacterState(State value)
     {
         state = value;
+    }
+
+    private void Update()
+    {
+        if (role == Role.Dancer)
+        {
+            if (GetComponent<FieldOfView>().visibleDeathNpcs.Count > 0)
+            {
+                if (!GetComponent<Animator>().GetBool("isPanicking"))
+                {
+                    GetComponent<Animator>().SetBool("isPanicking", true);
+                }
+            }
+        }
     }
 }

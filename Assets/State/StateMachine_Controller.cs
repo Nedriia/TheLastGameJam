@@ -71,6 +71,7 @@ public class StateMachine_Controller : StateMachineBehaviour
         characterController.state = value;
     }
 
+
     public Vector3 Get_CharacterPosition()
     {
         return characterController.transform.position;
@@ -90,13 +91,16 @@ public class StateMachine_Controller : StateMachineBehaviour
     {
         //Will always go after the first player see
         GameObject playerDetected = characterController.detection.visibleTargets[0].gameObject;
-        foreach(PlayerController w in characterController.playersToWatch)
+        if (characterController.playersToWatch.Length > 0)
         {
-            if(playerDetected.name == w.name && w.state == PlayerController.State.Murderer)
+            foreach (PlayerController w in characterController.playersToWatch)
             {
-                //Debug.Log("Murderer Detected");
-                Set_Target(playerDetected.transform);
-                return true;
+                if (playerDetected.name == w.name && w.state == PlayerController.State.Murderer)
+                {
+                    //Debug.Log("Murderer Detected");
+                    Set_Target(playerDetected.transform);
+                    return true;
+                }
             }
         }
         return false; 

@@ -12,6 +12,7 @@ public class FieldOfView : MonoBehaviour {
 	public LayerMask obstacleMask;
 
 	public List<Transform> visibleTargets = new List<Transform>();
+    public List<Transform> visibleDeathNpcs = new List<Transform>();
 
 	void Start() {
 		StartCoroutine ("FindTargetsWithDelay", .2f);
@@ -27,7 +28,8 @@ public class FieldOfView : MonoBehaviour {
 
 	void FindVisibleTargets() {
 		visibleTargets.Clear ();
-		Collider[] targetsInViewRadius = Physics.OverlapSphere (transform.position, viewRadius, targetMask);
+        visibleDeathNpcs.Clear();
+        Collider[] targetsInViewRadius = Physics.OverlapSphere (transform.position, viewRadius, targetMask);
 
 		for (int i = 0; i < targetsInViewRadius.Length; i++) {
 			Transform target = targetsInViewRadius [i].transform;
@@ -36,7 +38,14 @@ public class FieldOfView : MonoBehaviour {
 				float dstToTarget = Vector3.Distance (transform.position, target.position);
 
 				if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)) {
-					visibleTargets.Add (target);
+                    if (target.gameObject.layer == 8)
+                    {
+                        visibleTargets.Add(target);
+                    }
+                    else
+                    {
+                        visibleDeathNpcs.Add(target);
+                    }
 				}
 			}
 		}
