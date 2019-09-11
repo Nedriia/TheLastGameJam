@@ -7,22 +7,44 @@ public class Search_Action : StateMachine_Controller
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //Debug.Log("Idle State, Looking for Something to do");
-        //Debug.Log(Get_CharacterRole(animator).ToString());
-
-        //Is looking for dancing
         Get_CharacterController(animator);
-        int index = Random.Range(0, characterController.dancePositions.Length);
-        Set_Target(characterController.dancePositions[index]);
-        Get_NavMeshAgent(animator).SetDestination(Get_Target());
+        //For Now it will be a simple Random
+        int what_Do_I_Do = Random.Range(1, 6);
+        //Debug.Log(what_Do_I_Do);
+        switch (what_Do_I_Do)
+        {
+            case 1:
+            case 2:
+            case 3:
+                // Go to Dance Somewhere ( can be the same spot )
+                animator.SetBool("isDancing", true);
+                break;
+            case 4:
+                //Going to the Bar
+                Set_CharacterState(AI_Controller.State.Moving);
 
-        Set_CharacterState(AI_Controller.State.Moving);
-        animator.SetBool("isMoving", true);
+                int indexToFind = Random.Range(0, characterController.barPositions.Length);
+                Set_Target(characterController.barPositions[indexToFind]);
+                Get_NavMeshAgent(animator).SetDestination(Get_Target());
+
+                animator.SetBool("ToTheBar", true);
+                break;
+            case 5:
+                // Need to go to the Toilet
+                Set_CharacterState(AI_Controller.State.Moving);
+                Set_Target(Get_ToiletLocation());
+                animator.SetBool("ToToilet", true);
+                break;
+            default:
+                animator.SetBool("isDancing", true);
+                break;
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+
     }
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -30,16 +52,4 @@ public class Search_Action : StateMachine_Controller
     {
 
     }
-
-    // OnStateMove is called right after Animator.OnAnimatorMove()
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that processes and affects root motion
-    //}
-
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
 }
