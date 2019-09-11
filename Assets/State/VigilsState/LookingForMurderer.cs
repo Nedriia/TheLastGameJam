@@ -16,9 +16,11 @@ public class LookingForMurderer : StateMachine_Controller
         //Look for murderer
         if (Get_CharacterDetected())
         {
-            Get_State_Player();
-            animator.SetBool("IsMoving", true);
-            Set_CharacterState(AI_Controller.State.Occupied);
+            if (CheckIfPlayerisMurderer())
+            {
+                animator.SetBool("IsMoving", true);
+                Set_CharacterState(AI_Controller.State.Moving);
+            }
         }
     }
 

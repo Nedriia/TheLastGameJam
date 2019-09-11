@@ -21,6 +21,7 @@ public class AI_Controller : MonoBehaviour
         Panic = 3,
         Dancing = 4,
         Occupied =5,
+        Chasing = 6,
     }
 
     [Header("AI States")]
@@ -48,6 +49,7 @@ public class AI_Controller : MonoBehaviour
 
     [Header("Variables to Adjust")]
     public float detectionDistance = 5;
+    public float VigilCatchDistance = 0.5f;
 
     [Header("Detection")]
     public FieldOfView detection;

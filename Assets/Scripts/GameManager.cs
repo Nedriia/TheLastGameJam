@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public void ShowLoseScreen()
     {
+        Time.timeScale = 0;
         loseScreen.SetActive(true);
     }
 }

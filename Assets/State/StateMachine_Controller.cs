@@ -82,12 +82,17 @@ public class StateMachine_Controller : StateMachineBehaviour
         return characterController.detectionDistance;
     }
 
+    public float Get_VigilCatchDistance()
+    {
+        return characterController.VigilCatchDistance;
+    }
+
     public bool Get_CharacterDetected()
     {
         return (characterController.detection.visibleTargets.Count > 0);
     }
 
-    public bool Get_State_Player()
+    public bool CheckIfPlayerisMurderer()
     {
         //Will always go after the first player see
         GameObject playerDetected = characterController.detection.visibleTargets[0].gameObject;
@@ -97,7 +102,6 @@ public class StateMachine_Controller : StateMachineBehaviour
             {
                 if (playerDetected.name == w.name && w.state == PlayerController.State.Murderer)
                 {
-                    //Debug.Log("Murderer Detected");
                     Set_Target(playerDetected.transform);
                     return true;
                 }

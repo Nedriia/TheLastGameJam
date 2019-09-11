@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class VigilMoving : StateMachine_Controller
+public class VigilChasing : StateMachine_Controller
 {
 
     public float basicSpeed, sprintSpeed;
@@ -12,25 +12,25 @@ public class VigilMoving : StateMachine_Controller
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Get_CharacterController(animator);
-        if (Get_CharacterDetected() && Get_State_Player())
-        {
-            animator.GetComponent<NavMeshAgent>().speed = sprintSpeed;
-        }
+        animator.GetComponent<NavMeshAgent>().speed = sprintSpeed;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (Get_CharacterDetected() && Get_State_Player())
+        if (Vector3.Distance(characterController.transform.position, Get_Target()) < Get_VigilCatchDistance())
+        {
+            SceneManager.Instance.gameManager.ShowLoseScreen();
+        }
+        if (Get_CharacterDetected() && CheckIfPlayerisMurderer())
         {
             Get_NavMeshAgent(animator).SetDestination(Get_Target());
             Get_OrientationPlayer();
-            Set_CharacterState(AI_Controller.State.Moving);
         }
         else
         {
-            Get_NavMeshAgent(animator).SetDestination(characterController.post);
             animator.GetComponent<NavMeshAgent>().speed = basicSpeed;
+            animator.SetBool("MurdererFound", false);
         }
     }
 
