@@ -308,6 +308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -335,32 +340,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -726,6 +731,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -753,32 +763,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -1060,6 +1070,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1880168772}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &213499015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213499016}
+  m_Layer: 0
+  m_Name: Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &213499016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213499015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660389461}
+  - {fileID: 802419642}
+  - {fileID: 1447362246}
+  - {fileID: 477376673}
+  - {fileID: 239753887}
+  - {fileID: 757632635}
+  - {fileID: 688304672}
+  - {fileID: 1971850021}
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239753886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,8 +1135,8 @@ Transform:
   m_LocalPosition: {x: 15.474022, y: -3.118618, z: 9.981453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 15
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &255454211
 PrefabInstance:
@@ -1169,6 +1217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -1196,32 +1249,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -1996,6 +2049,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 519330582228880913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &313845520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313845521}
+  - component: {fileID: 313845522}
+  m_Layer: 0
+  m_Name: DanceArea (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313845521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313845520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13, y: -3.63, z: -22.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &313845522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313845520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.992016, y: 1, z: 17.442158}
+  m_Center: {x: -1.3621998, y: 0, z: 3.078947}
 --- !u!1 &314144696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -2211,32 +2313,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -2413,6 +2515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -2440,32 +2547,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -2927,15 +3034,14 @@ Transform:
   - {fileID: 276564617}
   - {fileID: 1399108616}
   - {fileID: 964566067}
-  - {fileID: 1660389461}
-  - {fileID: 802419642}
-  - {fileID: 1447362246}
-  - {fileID: 477376673}
-  - {fileID: 239753887}
-  - {fileID: 757632635}
-  - {fileID: 688304672}
-  - {fileID: 1971850021}
   - {fileID: 1143418686}
+  - {fileID: 1359211388}
+  - {fileID: 1383544064}
+  - {fileID: 1235983974}
+  - {fileID: 313845521}
+  - {fileID: 520549433}
+  - {fileID: 1944109105}
+  - {fileID: 213499016}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2966,8 +3072,8 @@ Transform:
   m_LocalPosition: {x: 14.274021, y: -3.118618, z: 11.171452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 14
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487228341
 GameObject:
@@ -3163,6 +3269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -3190,32 +3301,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -3273,6 +3384,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c7f252519b492d4ba1ce7f477262260, type: 3}
+--- !u!1 &520549432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520549433}
+  - component: {fileID: 520549434}
+  m_Layer: 0
+  m_Name: DanceArea (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520549433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520549432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8, y: -3.63, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &520549434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520549432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.646347, y: 1, z: 8.7481365}
+  m_Center: {x: -8.689365, y: 0, z: 1.7289534}
 --- !u!4 &545211915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4709699731507899181, guid: 4c7f252519b492d4ba1ce7f477262260,
@@ -3416,12 +3571,12 @@ MonoBehaviour:
   toiletPosition: {fileID: 0}
   toiletPositions: []
   dancePositions:
-  - {fileID: 258895289}
-  - {fileID: 1805168204}
-  - {fileID: 309591335}
-  - {fileID: 276564617}
-  - {fileID: 1399108616}
-  - {fileID: 964566067}
+  - {fileID: 1359211388}
+  - {fileID: 1383544064}
+  - {fileID: 1235983974}
+  - {fileID: 313845521}
+  - {fileID: 520549433}
+  - {fileID: 1944109105}
   barPositions: []
   target: {fileID: 1805168204}
   agent: {fileID: 0}
@@ -3430,6 +3585,7 @@ MonoBehaviour:
   barLocation: {fileID: 1143418686}
   detectionDistance: 25
   VigilCatchDistance: 0.5
+  AgentAcceleration: 8
   detection: {fileID: 0}
 --- !u!54 &550610204
 Rigidbody:
@@ -3641,6 +3797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -3668,32 +3829,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -3778,8 +3939,8 @@ Transform:
   m_LocalPosition: {x: 18.114021, y: -3.118618, z: 8.661449}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 17
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695143060
 GameObject:
@@ -4509,8 +4670,8 @@ Transform:
   m_LocalPosition: {x: 16.87402, y: -3.118618, z: 9.231453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 16
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759960885 stripped
 GameObject:
@@ -4766,8 +4927,8 @@ Transform:
   m_LocalPosition: {x: 12.14402, y: -3.118618, z: 13.631451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 12
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &810048591
 GameObject:
@@ -5068,6 +5229,16 @@ PrefabInstance:
         type: 3}
       propertyPath: VigilCatchDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
@@ -5741,6 +5912,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!4 &968676912 stripped
@@ -5834,6 +6015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -5861,32 +6047,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -6065,6 +6251,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!4 &1121267286 stripped
@@ -6192,6 +6388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -6219,32 +6420,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -6381,6 +6582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -6408,32 +6614,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -6628,7 +6834,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460697933}
-  m_RootOrder: 19
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175240077
 GameObject:
@@ -6974,6 +7180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -7001,32 +7212,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -7278,6 +7489,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -7305,32 +7521,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -7388,6 +7604,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c7f252519b492d4ba1ce7f477262260, type: 3}
+--- !u!1 &1235983973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235983974}
+  - component: {fileID: 1235983975}
+  m_Layer: 0
+  m_Name: DanceArea (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235983974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235983973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.8, y: -3.63, z: -22.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1235983975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235983973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.992016, y: 1, z: 12.114422}
+  m_Center: {x: -1.3621998, y: 0, z: 3.412096}
 --- !u!1 &1249571711
 GameObject:
   m_ObjectHideFlags: 0
@@ -7739,6 +7999,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!4 &1299581335 stripped
@@ -7826,6 +8096,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -7853,32 +8128,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -8023,6 +8298,94 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &1359211387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359211388}
+  - component: {fileID: 1359211389}
+  m_Layer: 0
+  m_Name: DanceArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359211388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359211387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -59.99, y: -3.63, z: 5.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1359211389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359211387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.277576, y: 1, z: 11.156494}
+  m_Center: {x: -0.5049801, y: 0, z: 3.8910599}
+--- !u!1 &1383544063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383544064}
+  - component: {fileID: 1383544065}
+  m_Layer: 0
+  m_Name: DanceArea (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383544064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383544063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -59.99, y: -3.63, z: -14.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1383544065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383544063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.992016, y: 1, z: 12.114422}
+  m_Center: {x: -1.3621998, y: 0, z: 3.412096}
 --- !u!1001 &1387328289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8102,6 +8465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -8129,32 +8497,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -8532,8 +8900,8 @@ Transform:
   m_LocalPosition: {x: 13.274021, y: -3.118618, z: 12.45145}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 13
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461165579
 GameObject:
@@ -9249,6 +9617,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!4 &1588057164 stripped
@@ -9342,6 +9720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -9369,32 +9752,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -9571,6 +9954,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -9598,32 +9986,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -9965,8 +10353,8 @@ Transform:
   m_LocalPosition: {x: 11.514023, y: -3.118618, z: 15.18145}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 11
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1663782235 stripped
 Transform:
@@ -10741,6 +11129,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -10768,32 +11161,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -11320,12 +11713,12 @@ MonoBehaviour:
   toiletPosition: {fileID: 0}
   toiletPositions: []
   dancePositions:
-  - {fileID: 258895289}
-  - {fileID: 1805168204}
-  - {fileID: 309591335}
-  - {fileID: 276564617}
-  - {fileID: 1399108616}
-  - {fileID: 964566067}
+  - {fileID: 1359211388}
+  - {fileID: 1383544064}
+  - {fileID: 1235983974}
+  - {fileID: 313845521}
+  - {fileID: 520549433}
+  - {fileID: 1944109105}
   barPositions: []
   target: {fileID: 1805168204}
   agent: {fileID: 0}
@@ -11334,6 +11727,7 @@ MonoBehaviour:
   barLocation: {fileID: 1143418686}
   detectionDistance: 30
   VigilCatchDistance: 0.5
+  AgentAcceleration: 8
   detection: {fileID: 0}
 --- !u!54 &1852084622
 Rigidbody:
@@ -11448,6 +11842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -11475,32 +11874,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -11712,6 +12111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -11739,32 +12143,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]
@@ -11822,6 +12226,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c7f252519b492d4ba1ce7f477262260, type: 3}
+--- !u!1 &1944109104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944109105}
+  - component: {fileID: 1944109106}
+  m_Layer: 0
+  m_Name: DanceArea (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944109105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944109104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18, y: -3.63, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 460697933}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1944109106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944109104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.762377, y: 1, z: 8.7481365}
+  m_Center: {x: -10.737592, y: 0, z: 1.7289534}
 --- !u!1 &1961007218
 GameObject:
   m_ObjectHideFlags: 0
@@ -11983,6 +12431,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!4 &1963940555 stripped
@@ -12018,8 +12476,8 @@ Transform:
   m_LocalPosition: {x: 19.39402, y: -3.118618, z: 8.2114525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 460697933}
-  m_RootOrder: 18
+  m_Father: {fileID: 213499016}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1982672405
 GameObject:
@@ -12691,6 +13149,16 @@ PrefabInstance:
       propertyPath: VigilCatchDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: Agentacceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 519330581916154740, guid: 7ee53909317669a45b66d2206c1b2a08,
+        type: 3}
+      propertyPath: AgentAcceleration
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee53909317669a45b66d2206c1b2a08, type: 3}
 --- !u!1001 &4709699731363309481
@@ -12762,6 +13230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
+      propertyPath: dancePositions.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
+        type: 3}
       propertyPath: dancePosition
       value: 
       objectReference: {fileID: 2086210579}
@@ -12789,32 +13262,32 @@ PrefabInstance:
         type: 3}
       propertyPath: dancePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 2086210579}
+      objectReference: {fileID: 1359211388}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 258895289}
+      objectReference: {fileID: 1383544064}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1805168204}
+      objectReference: {fileID: 1235983974}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 309591335}
+      objectReference: {fileID: 313845521}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[4]
       value: 
-      objectReference: {fileID: 276564617}
+      objectReference: {fileID: 520549433}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[5]
       value: 
-      objectReference: {fileID: 1399108616}
+      objectReference: {fileID: 1944109105}
     - target: {fileID: 4709699731507899177, guid: 4c7f252519b492d4ba1ce7f477262260,
         type: 3}
       propertyPath: dancePositions.Array.data[6]

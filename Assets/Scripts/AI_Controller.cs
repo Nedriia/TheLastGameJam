@@ -50,6 +50,7 @@ public class AI_Controller : MonoBehaviour
     [Header("Variables to Adjust")]
     public float detectionDistance = 5;
     public float VigilCatchDistance = 0.5f;
+    public float AgentAcceleration = 8;
 
     [Header("Detection")]
     public FieldOfView detection;
@@ -85,6 +86,7 @@ public class AI_Controller : MonoBehaviour
         if(GetComponent<NavMeshAgent>() == null)
         {
             NavMeshAgent nav_agent = gameObject.AddComponent<NavMeshAgent>();
+            nav_agent.acceleration = AgentAcceleration;
             agent = nav_agent;
         }
 

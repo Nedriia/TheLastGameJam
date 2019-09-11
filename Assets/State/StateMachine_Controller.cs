@@ -49,7 +49,16 @@ public class StateMachine_Controller : StateMachineBehaviour
 
     public Vector3 Get_Target()
     {
-        return new Vector3(characterController.target.position.x, characterController.target.position.y, characterController.target.position.z);
+        if (characterController.target != null)
+        {
+            return new Vector3(characterController.target.position.x, characterController.target.position.y, characterController.target.position.z);
+        }
+        else
+        {
+            Debug.LogError("Target Value is Null, Vector3.zero returned instead");
+            return Vector3.zero;
+        }
+
     }
 
     public void Set_Target(Transform value)
