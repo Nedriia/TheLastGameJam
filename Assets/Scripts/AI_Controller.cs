@@ -12,6 +12,7 @@ public class AI_Controller : MonoBehaviour
         Medic = 3,
         Vigil = 4,
         Target = 5,
+        Killer = 6,
     }
 
     public enum State
@@ -22,6 +23,7 @@ public class AI_Controller : MonoBehaviour
         Dancing = 4,
         Occupied =5,
         Chasing = 6,
+        Patrolling = 7,
     }
 
     [Header("AI States")]
@@ -93,10 +95,6 @@ public class AI_Controller : MonoBehaviour
         if (playersToWatch == null)
         {
             playersToWatch = new PlayerController[2] { GameObject.Find("PlayerOne").GetComponent<PlayerController>(), GameObject.Find("PlayerOne").GetComponent<PlayerController>() };
-        }
-        if (playersToWatch.Length <= 1)
-        {
-            
         }
     }
 
