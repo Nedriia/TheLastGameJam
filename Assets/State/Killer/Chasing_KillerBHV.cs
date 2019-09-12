@@ -6,7 +6,14 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
 {
 
     Transform target;
+    Vector3 lastPos;
     public float chasingSpeed = 10;
+    public bool CheckingLastPos = false;
+    public bool RighSideChecked = false;
+    public float baseRotation;
+    public float currentAngle;
+    public float rotationangle;
+    public float rotationSpeed = 0.1f;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -31,13 +38,16 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
     {
         if (killerController.PlayerinView())
         {
-            if (killerController.fieldOfView.visibleTargets[0].gameObject != target.gameObject)
+            Debug.Log(target);
+            if (killerController.fieldOfView.visibleTargets[0].gameObject != target.gameObject && !CheckingLastPos)
             {
+                
                 target = null;
                 animator.SetBool("isChasing", false);
             }
             else
             {
+                lastPos = target.position;
                 killerController.GetAgent().SetDestination(target.position);
 
                 if (Vector3.Distance(killerController.transform.position, target.position) < killerController.chasingDetectionDistance)
@@ -46,11 +56,59 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
                 }
             }
         }
-        else
+
+        if (!killerController.PlayerinView() && !CheckingLastPos)
         {
-            target = null;
-            animator.SetBool("isChasing", false);
+            CheckingLastPos = true;
+            baseRotation = killerController.transform.rotation.eulerAngles.y;
+            currentAngle = baseRotation;
+            killerController.GetAgent().SetDestination(lastPos);
+        }
+
+
+        if (CheckingLastPos)
+        {
+            if (Vector3.Distance(killerController.transform.position, lastPos) < 1f)
+            {
+                if (!RighSideChecked)
+                {
+                    
+                    if (( (baseRotation + 90) - currentAngle) < 0)
+                    {
+                        RighSideChecked = true;
+                    }
+                    else
+                    {
+                        currentAngle += Time.deltaTime * rotationSpeed;
+                        killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
+                    }
+                }
+
+            }
+            else
+            {
+                killerController.GetAgent().SetDestination(lastPos);
+            }
+
+            if (RighSideChecked)
+            {
+                if (((baseRotation - 90) - currentAngle) > 0)
+                {
+                    target = null;
+                    animator.SetBool("isChasing", false);
+                    CheckingLastPos = false;
+                    RighSideChecked = false;
+                }
+                else
+                {
+                    currentAngle -= Time.deltaTime * rotationSpeed;
+                    killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
+                }
+            }
+
         }
 
     }
+
+
 }

@@ -14,16 +14,24 @@ public class FieldOfView : MonoBehaviour {
 	public List<Transform> visibleTargets = new List<Transform>();
     public List<Transform> visibleDeathNpcs = new List<Transform>();
 
+    bool enableFOV;
+
 	void Start() {
 		StartCoroutine ("FindTargetsWithDelay", .2f);
 	}
 
+    void Update()
+    {
+        if (enableFOV)
+        {
+            FindVisibleTargets();
+        }
+    }
 
-	IEnumerator FindTargetsWithDelay(float delay) {
-		while (true) {
-			yield return new WaitForSeconds (delay);
-			FindVisibleTargets ();
-		}
+
+    IEnumerator FindTargetsWithDelay(float delay) {
+		yield return new WaitForSeconds (delay);
+        enableFOV = true;
 	}
 
 	void FindVisibleTargets() {

@@ -53,19 +53,20 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void InteractionNPC()
     {
-        if (closestObjectInteract.GetComponent<AI_Controller>().role == AI_Controller.Role.Dancer)
+        /*if (closestObjectInteract.GetComponent<AI_Controller>().role == AI_Controller.Role.Dancer)
         {
             GameObject killedNpc = closestObjectInteract;
             killedNpc.GetComponent<AI_Controller>().Set_CharacterState(AI_Controller.State.Dead);
             killedNpc.GetComponent<Animator>().SetBool("isDead", true);
             killedNpc.layer = 10;
             GetComponent<PlayerController>().state = PlayerController.State.Murderer;
-        }
+        }*/
+        closestObjectInteract.GetComponent<InteractableObjs>().activeItem();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "InterctObj")
         {
             CloseObjects_List.Add(other.gameObject);
             if (CloseObjects_List.Count == 1)
@@ -78,7 +79,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "InterctObj")
         {
             CloseObjects_List.Remove(other.gameObject);
             if (closestObjectInteract == other.gameObject)
