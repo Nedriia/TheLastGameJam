@@ -38,23 +38,26 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
     {
         if (killerController.PlayerinView())
         {
-            Debug.Log(target);
-            if (killerController.fieldOfView.visibleTargets[0].gameObject != target.gameObject && !CheckingLastPos)
+            if (target != null)
             {
-                
-                target = null;
-                animator.SetBool("isChasing", false);
-            }
-            else
-            {
-                lastPos = target.position;
-                killerController.GetAgent().SetDestination(target.position);
-
-                if (Vector3.Distance(killerController.transform.position, target.position) < killerController.chasingDetectionDistance)
+                if (killerController.fieldOfView.visibleTargets[0].gameObject != target.gameObject && !CheckingLastPos)
                 {
-                    Debug.Log("Player Chased!");
+
+                    target = null;
+                    animator.SetBool("isChasing", false);
+                }
+                else
+                {
+                    lastPos = target.position;
+                    killerController.GetAgent().SetDestination(target.position);
+
+                    if (Vector3.Distance(killerController.transform.position, target.position) < killerController.chasingDetectionDistance)
+                    {
+                        Debug.Log("Player Chased!");
+                    }
                 }
             }
+
         }
 
         if (!killerController.PlayerinView() && !CheckingLastPos)

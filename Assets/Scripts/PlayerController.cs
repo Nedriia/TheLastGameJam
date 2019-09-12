@@ -36,10 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E) && playerBehaviour.CloseObjects_List.Count > 0)
             {
-                if (playerBehaviour.closestObjectInteract.layer == 11)
-                {
-                    playerBehaviour.InteractionNPC();
-                }
+                playerBehaviour.InteractionNPC();
             }
         }
         else

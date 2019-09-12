@@ -41,7 +41,7 @@ public class PlayerBehaviour : MonoBehaviour
             PlayersUI[0].SetActive(true);
             Vector3 ui_offset = closestObjectInteract.gameObject.GetComponent<MeshRenderer>().bounds.size;
             ui_offset.y = 0;
-            ui_offset.x = ui_offset.x / 2;
+            ui_offset.x = ui_offset.x * 5;
             PlayersUI[0].transform.position = Camera.main.WorldToScreenPoint(closestObjectInteract.transform.position + ui_offset);
         }
         else
@@ -68,6 +68,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (other.tag == "InterctObj")
         {
+            Debug.Log("Obj");
             CloseObjects_List.Add(other.gameObject);
             if (CloseObjects_List.Count == 1)
             {
