@@ -10,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     public List<GameObject> PlayersUI;
 
+    public GameObject lockerHidden;
+
 
     // Update is called once per frame
     void Update()
@@ -41,7 +43,18 @@ public class PlayerBehaviour : MonoBehaviour
             PlayersUI[0].SetActive(true);
             Vector3 ui_offset = closestObjectInteract.gameObject.GetComponent<MeshRenderer>().bounds.size;
             ui_offset.y = 0;
-            ui_offset.x = ui_offset.x * 5;
+            switch (closestObjectInteract.GetComponent<InteractableObjs>().typeOf)
+            {
+                case InteractableObjs.Typeof.Button:
+                    ui_offset.x = ui_offset.x * 5;
+                    break;
+                case InteractableObjs.Typeof.Loker:
+                    ui_offset.x = ui_offset.x / 2;
+                    break;
+                default:
+                    break;
+            }
+            
             PlayersUI[0].transform.position = Camera.main.WorldToScreenPoint(closestObjectInteract.transform.position + ui_offset);
         }
         else
@@ -61,7 +74,7 @@ public class PlayerBehaviour : MonoBehaviour
             killedNpc.layer = 10;
             GetComponent<PlayerController>().state = PlayerController.State.Murderer;
         }*/
-        closestObjectInteract.GetComponent<InteractableObjs>().activeItem();
+        closestObjectInteract.GetComponent<InteractableObjs>().activeItem(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)

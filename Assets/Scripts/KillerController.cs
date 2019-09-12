@@ -19,6 +19,8 @@ public class KillerController : MonoBehaviour
 
     NavMeshAgent agent;
 
+    public GameObject objToCheck;
+
     // Start is called before the first frame update
     void Start()
     {

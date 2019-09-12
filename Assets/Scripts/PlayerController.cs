@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         Innocent = 1,
         Murderer = 2,
+        Hidden = 3,
     }
     public State state;
 

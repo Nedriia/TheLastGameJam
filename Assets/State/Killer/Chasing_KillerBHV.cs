@@ -26,6 +26,7 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
             killerController.GetAgent().speed = chasingSpeed;
 
             animator.SetBool("isPatrolling", false);
+            animator.SetBool("isCheckingObj", false);
         }
         else
         {
@@ -38,6 +39,12 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
     {
         if (killerController.PlayerinView())
         {
+            if (killerController.fieldOfView.visibleTargets[0].GetComponent<PlayerController>().state == PlayerController.State.Hidden)
+            {
+                killerController.objToCheck = killerController.fieldOfView.visibleTargets[0].GetComponent<PlayerBehaviour>().lockerHidden;
+                animator.SetBool("isCheckingObj", true);
+                animator.SetBool("isChasing", false);
+            }
             if (target != null)
             {
                 if (killerController.fieldOfView.visibleTargets[0].gameObject != target.gameObject && !CheckingLastPos)
@@ -71,7 +78,7 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
 
         if (CheckingLastPos)
         {
-            if (Vector3.Distance(killerController.transform.position, lastPos) < 1f)
+            if (Vector3.Distance(killerController.transform.position, lastPos) < 0.3f)
             {
                 if (!RighSideChecked)
                 {

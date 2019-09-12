@@ -5,6 +5,7 @@ using UnityEngine;
 public class KillerStateMachine_Controller : StateMachine_Controller
 {
     public KillerController killerController;
+    
 
     public new KillerController Get_CharacterController(Animator animator)
     {
