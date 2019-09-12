@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chasing_KillerBHV : KillerStateMachine_Controller
 {
 
-    Transform target;
+    public Transform target;
     Vector3 lastPos;
     public float chasingSpeed = 10;
     public bool CheckingLastPos = false;
@@ -78,44 +78,52 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
 
         if (CheckingLastPos)
         {
-            if (Vector3.Distance(killerController.transform.position, lastPos) < 0.3f)
+            if (killerController.PlayerinView())
             {
-                if (!RighSideChecked)
-                {
-                    
-                    if (( (baseRotation + 90) - currentAngle) < 0)
-                    {
-                        RighSideChecked = true;
-                    }
-                    else
-                    {
-                        currentAngle += Time.deltaTime * rotationSpeed;
-                        killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
-                    }
-                }
-
+                CheckingLastPos = false;
+                RighSideChecked = false;
+                animator.SetBool("isChasing", false);
             }
             else
             {
-                killerController.GetAgent().SetDestination(lastPos);
-            }
-
-            if (RighSideChecked)
-            {
-                if (((baseRotation - 90) - currentAngle) > 0)
+                if (Vector3.Distance(killerController.transform.position, lastPos) < 0.3f)
                 {
-                    target = null;
-                    animator.SetBool("isChasing", false);
-                    CheckingLastPos = false;
-                    RighSideChecked = false;
+                    if (!RighSideChecked)
+                    {
+
+                        if (((baseRotation + 90) - currentAngle) < 0)
+                        {
+                            RighSideChecked = true;
+                        }
+                        else
+                        {
+                            currentAngle += Time.deltaTime * rotationSpeed;
+                            killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
+                        }
+                    }
+
                 }
                 else
                 {
-                    currentAngle -= Time.deltaTime * rotationSpeed;
-                    killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
+                    killerController.GetAgent().SetDestination(lastPos);
+                }
+
+                if (RighSideChecked)
+                {
+                    if (((baseRotation - 90) - currentAngle) > 0)
+                    {
+                        target = null;
+                        animator.SetBool("isChasing", false);
+                        CheckingLastPos = false;
+                        RighSideChecked = false;
+                    }
+                    else
+                    {
+                        currentAngle -= Time.deltaTime * rotationSpeed;
+                        killerController.transform.eulerAngles = new Vector3(killerController.transform.eulerAngles.x, currentAngle, killerController.transform.eulerAngles.z);
+                    }
                 }
             }
-
         }
 
     }

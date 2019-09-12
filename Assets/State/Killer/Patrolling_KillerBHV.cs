@@ -61,7 +61,6 @@ public class Patrolling_KillerBHV : KillerStateMachine_Controller
                 positionsToPatroll.RemoveAt(0);
                 if (positionsToPatroll.Count == 0)
                 {
-                    Debug.Log("End of Points");
                     animator.SetBool("isPatrolling", false);
                 }
                 else

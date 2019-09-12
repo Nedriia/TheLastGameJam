@@ -8,6 +8,7 @@ public class InteractableObjs : MonoBehaviour
     {
         Button = 1,
         Loker = 2,
+        Generator = 3,
     }
     public Typeof typeOf;
 
@@ -20,6 +21,9 @@ public class InteractableObjs : MonoBehaviour
                 break;
             case Typeof.Loker:
                 gameObject.GetComponent<LockerObj>().interaction(player);
+                break;
+            case Typeof.Generator:
+                gameObject.GetComponent<GeneratorObj>().interaction(player);
                 break;
             default:
                 break;

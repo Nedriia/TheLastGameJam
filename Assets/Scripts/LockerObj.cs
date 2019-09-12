@@ -67,7 +67,12 @@ public class LockerObj : MonoBehaviour
     IEnumerator delayCatch()
     {
         yield return new WaitForSeconds(1);
-        playerInside.layer = 0;
+        if (playerInside != null)
+        {
+            playerInside.layer = 0;
+            
+        }
         delayactive = false;
+
     }
 }

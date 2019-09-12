@@ -81,7 +81,6 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (other.tag == "InterctObj")
         {
-            Debug.Log("Obj");
             CloseObjects_List.Add(other.gameObject);
             if (CloseObjects_List.Count == 1)
             {
