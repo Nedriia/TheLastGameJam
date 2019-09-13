@@ -41,6 +41,7 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
         {
             if (killerController.fieldOfView.visibleTargets[0].GetComponent<PlayerController>().state == PlayerController.State.Hidden)
             {
+                Debug.Log("DIFERENT PLAYER ><");
                 killerController.objToCheck = killerController.fieldOfView.visibleTargets[0].GetComponent<PlayerBehaviour>().lockerHidden;
                 animator.SetBool("isCheckingObj", true);
                 animator.SetBool("isChasing", false);
@@ -64,7 +65,6 @@ public class Chasing_KillerBHV : KillerStateMachine_Controller
                     }
                 }
             }
-
         }
 
         if (!killerController.PlayerinView() && !CheckingLastPos)

@@ -9,15 +9,19 @@ public class ButtonObj : MonoBehaviour
     public float baseAngle;
     public float currentAngle;
     public float offsetAngle;
-    bool opened = false;
+    public bool opened = false;
     bool moving = false;
     public float rotationSpeed = 40;
 
     // Start is called before the first frame update
     void Start()
     {
-        baseAngle = porteref.transform.eulerAngles.y;
-        currentAngle = baseAngle;
+        //baseAngle = porteref.transform.eulerAngles.y;
+        if (opened)
+        {
+            baseAngle = porteref.transform.eulerAngles.y + 90;
+        }
+        currentAngle = porteref.transform.eulerAngles.y;
     }
 
     public void interaction()
@@ -25,7 +29,6 @@ public class ButtonObj : MonoBehaviour
         if (!moving)
         {
             moving = true;
-            
         }
 
     }
@@ -37,7 +40,7 @@ public class ButtonObj : MonoBehaviour
         {
             if (!opened)
             {
-                if (((baseAngle - 90) - currentAngle) > 0)
+                if (((baseAngle - offsetAngle) - currentAngle) > 0)
                 {
                     Debug.Log("Opened Door");
                     opened = true;
