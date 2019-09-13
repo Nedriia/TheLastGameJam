@@ -1489,7 +1489,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 422037067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194230}
+        m_MethodName: ResetScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &422037067
@@ -4295,7 +4306,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1557117253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194230}
+        m_MethodName: ExitApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1557117253
@@ -5695,7 +5717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.099976, y: 190.40002}
+  m_AnchoredPosition: {x: 32.099976, y: 231}
   m_SizeDelta: {x: 250.1, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1961007220
@@ -5725,7 +5747,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -6204,15 +6226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Killer_squelete
       objectReference: {fileID: 0}
-    - target: {fileID: 6046576105034169996, guid: e12c24fc863805a4ca2b66872a006cf0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7328088003048098975, guid: e12c24fc863805a4ca2b66872a006cf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7328088003048098975, guid: e12c24fc863805a4ca2b66872a006cf0,
         type: 3}
@@ -6222,7 +6239,7 @@ PrefabInstance:
     - target: {fileID: 7328088003048098975, guid: e12c24fc863805a4ca2b66872a006cf0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.92
+      value: 9.08
       objectReference: {fileID: 0}
     - target: {fileID: 7328088003048098975, guid: e12c24fc863805a4ca2b66872a006cf0,
         type: 3}
@@ -6263,21 +6280,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362188547762579339, guid: e12c24fc863805a4ca2b66872a006cf0,
-        type: 3}
-      propertyPath: patrollingAreas.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362188547762579339, guid: e12c24fc863805a4ca2b66872a006cf0,
-        type: 3}
-      propertyPath: playersToWatch.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2362188547762579339, guid: e12c24fc863805a4ca2b66872a006cf0,
-        type: 3}
-      propertyPath: playersToWatch.Array.data[1]
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2362188547762579339, guid: e12c24fc863805a4ca2b66872a006cf0,
         type: 3}

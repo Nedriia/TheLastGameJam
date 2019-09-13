@@ -38,6 +38,23 @@ public class Patrolling_KillerBHV : KillerStateMachine_Controller
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (positionsToPatroll.Count > 0)
+        {
+            if (killerController.GetAgent().CalculatePath(positionsToPatroll[0], killerController.GetAgent().path))
+            {
+                delayPointsTmp = 0;
+                checkingPoint = false;
+                positionsToPatroll.RemoveAt(0);
+                if (positionsToPatroll.Count == 0)
+                {
+                    animator.SetBool("isPatrolling", false);
+                }
+                else
+                {
+                    killerController.GetAgent().SetDestination(positionsToPatroll[0]);
+                }
+            }
+        }
         if (positionsToPatroll.Count > 0 && !checkingPoint)
         {
             if (Vector3.Distance(killerController.transform.position, positionsToPatroll[0]) < detectionDistancePoints)

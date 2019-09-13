@@ -27,12 +27,21 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 if (objectInteract != closestObjectInteract)
                 {
-                    if (Vector3.Distance(objectInteract.transform.position, transform.position) < Vector3.Distance(closestObjectInteract.transform.position, transform.position))
+                    if (closestObjectInteract == null)
                     {
-                        closestObjectInteract.GetComponent<Outline>().enabled = false;
                         closestObjectInteract = objectInteract;
                         closestObjectInteract.GetComponent<Outline>().enabled = true;
                     }
+                    else
+                    {
+                        if (Vector3.Distance(objectInteract.transform.position, transform.position) < Vector3.Distance(closestObjectInteract.transform.position, transform.position))
+                        {
+                            closestObjectInteract.GetComponent<Outline>().enabled = false;
+                            closestObjectInteract = objectInteract;
+                            closestObjectInteract.GetComponent<Outline>().enabled = true;
+                        }
+                    }
+
                 }
 
             }

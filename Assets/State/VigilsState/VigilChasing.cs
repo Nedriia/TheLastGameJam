@@ -20,7 +20,7 @@ public class VigilChasing : StateMachine_Controller
     {
         if (Vector3.Distance(characterController.transform.position, Get_Target()) < Get_VigilCatchDistance())
         {
-            SceneManager.Instance.gameManager.ShowLoseScreen();
+            //SceneManager.Instance.gameManager.ShowLoseScreen();
         }
         if (Get_CharacterDetected() && CheckIfPlayerisMurderer())
         {
