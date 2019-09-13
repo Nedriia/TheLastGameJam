@@ -62,6 +62,15 @@ public class PlayerController : MonoBehaviour
             moveX = Input.GetAxis("Horizontal2");
             moveZ = Input.GetAxis("Vertical2");
         }
+        if (moveX != 0 || moveZ != 0)
+        {
+            GetComponent<Animator>().SetBool("moving", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("moving", false);
+        }
+
 
         Move(moveX, moveZ);
     }

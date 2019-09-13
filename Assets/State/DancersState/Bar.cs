@@ -23,57 +23,7 @@ public class Bar : StateMachine_Controller
             timer += Time.deltaTime;
             if (timer > timeToDrink)
             {
-                //Stop Animation
-                //Move to Another Spot or go to the bar or the Toilet
-
-                //For Now it will be a simple Random
-                int what_Do_I_Do = Random.Range(1, 4);
-                //Debug.Log(what_Do_I_Do);
-                switch (what_Do_I_Do)
-                {
-                    case 1:
-                        //Debug.Log("Hmm i'm gonna dance at another spot");
-                        Set_CharacterState(AI_Controller.State.Moving);
-
-                        int index = Random.Range(0, characterController.dancePositions.Length);
-                        Set_Target(characterController.dancePositions[index]);
-                        Get_NavMeshAgent(animator).SetDestination(Get_Target());
-
-                        animator.SetBool("isOccupied", false);
-                        animator.SetBool("isMoving", true);
-                        animator.SetBool("ToToilet", false);
-                        timer = 0;
-                        break;
-
-                    case 2:
-                        //Debug.Log("I'm gonna dance at the same spot");
-                        Set_CharacterState(AI_Controller.State.Moving);
-
-                        Set_Target(Get_DanceLocation());
-                        Get_NavMeshAgent(animator).SetDestination(Get_Target());
-
-                        animator.SetBool("isOccupied", false);
-                        animator.SetBool("isMoving", true);
-                        animator.SetBool("ToToilet", false);
-
-                        break;
-
-                    case 3:
-                        //Debug.Log("I need to go to the toilet");
-                        Set_CharacterState(AI_Controller.State.Moving);
-
-                        Set_Target(Get_ToiletLocation());
-                        Get_NavMeshAgent(animator).SetDestination(Get_Target());
-
-                        animator.SetBool("isOccupied", false);
-                        animator.SetBool("isMoving", true);
-                        animator.SetBool("ToToilet", false);
-
-                        break;
-
-                    default:
-                        break;
-                }
+                animator.SetBool("ToTheBar", false);
             }
         }
     }

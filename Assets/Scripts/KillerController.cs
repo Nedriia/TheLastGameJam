@@ -36,6 +36,8 @@ public class KillerController : MonoBehaviour
             NavMeshAgent nav_agent = gameObject.AddComponent<NavMeshAgent>();
             nav_agent.acceleration = AgentAcceleration;
             agent = nav_agent;
+            agent.radius = GetComponent<CapsuleCollider>().radius;
+            agent.height = GetComponent<CapsuleCollider>().height;
         }
         if (playersToWatch == null)
         {

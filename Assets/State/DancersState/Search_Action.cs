@@ -17,7 +17,7 @@ public class Search_Action : StateMachine_Controller
             case 2:
             case 3:
                 // Go to Dance Somewhere ( can be the same spot )
-                animator.SetBool("isDancing", true);
+                animator.SetBool("GoingToDance", true);
                 break;
             case 4:
                 //Going to the Bar

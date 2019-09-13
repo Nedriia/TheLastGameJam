@@ -6,9 +6,9 @@ public class Dancing : StateMachine_Controller
 {
     public int minTimeToDance, maxTimeToDance;
     public float timeToDance, timer;
-    float distanceToStartDancing = 1;
+    float distanceToStartDancing = 1.5f;
     bool dancing = false;
-    Vector3 wheretoDance;
+    public Vector3 wheretoDance;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -16,30 +16,35 @@ public class Dancing : StateMachine_Controller
         Get_CharacterController(animator);
 
         // Where to Dance 
-        int index = Random.Range(0, characterController.dancePositions.Length);
+        /*int index = Random.Range(0, characterController.dancePositions.Length);
         wheretoDance = Outils.RandomPointInBounds(characterController.dancePositions[index].GetComponent<BoxCollider>().bounds);
-        wheretoDance.y = 0;
+        wheretoDance.y = 2;
         Get_NavMeshAgent(animator).SetDestination(wheretoDance);
-        dancing = false;
-        
+        dancing = false;*/
+        timeToDance = Random.Range(minTimeToDance, maxTimeToDance);
+        timer = 0;
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (Vector3.Distance(Get_CharacterPosition(), wheretoDance) < distanceToStartDancing && !dancing)
+
+        /*if (Vector3.Distance(Get_CharacterPosition(), wheretoDance) < distanceToStartDancing && !dancing)
         {
             timeToDance = Random.Range(minTimeToDance, maxTimeToDance);
             dancing = true;
-        }
+        }*/
         //Dance Animation
-        if (dancing)
-        {
+        //if (dancing)
+        //{
             timer += Time.deltaTime;
             //Stop Dancing, Find Something to Do
             if (timer > timeToDance){
                 animator.SetBool("isDancing", false);
+                timer = 0;
             }
-        }
+        //}
     }
 }
+
