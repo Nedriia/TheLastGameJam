@@ -21,19 +21,23 @@ public class Search_Action : StateMachine_Controller
                 break;
             case 4:
                 //Going to the Bar
-                Set_CharacterState(AI_Controller.State.Moving);
+                /*Set_CharacterState(AI_Controller.State.Moving);
 
                 int indexToFind = Random.Range(0, characterController.barPositions.Length);
                 Set_Target(characterController.barPositions[indexToFind]);
                 Get_NavMeshAgent(animator).SetDestination(Get_Target());
 
-                animator.SetBool("ToTheBar", true);
+                animator.SetBool("ToTheBar", true);*/
+
+                animator.SetBool("GoingToDance", true);
                 break;
             case 5:
                 // Need to go to the Toilet
-                Set_CharacterState(AI_Controller.State.Moving);
+                /*Set_CharacterState(AI_Controller.State.Moving);
                 Set_Target(Get_ToiletLocation());
-                animator.SetBool("ToToilet", true);
+                animator.SetBool("ToToilet", true);*/
+
+                animator.SetBool("GoingToDance", true);
                 break;
             default:
                 animator.SetBool("isDancing", true);

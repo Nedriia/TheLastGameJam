@@ -47,7 +47,7 @@ public class LockerObj : MonoBehaviour
             {
                 if (!delayactive)
                 {
-                    player.transform.position = transform.position + Vector3.right * 2;
+                    player.transform.position = transform.position + (gameObject.transform.right * -1) * 2;
                     player.GetComponent<PlayerController>().speed = basePlayerSpeed;
                     player.GetComponent<PlayerController>().state = PlayerController.State.Innocent;
                     player.GetComponent<CapsuleCollider>().enabled = true;

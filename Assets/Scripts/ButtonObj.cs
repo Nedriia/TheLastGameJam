@@ -12,6 +12,7 @@ public class ButtonObj : MonoBehaviour
     public bool opened = false;
     bool moving = false;
     public float rotationSpeed = 40;
+    public bool reversed = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,35 +37,72 @@ public class ButtonObj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving)
+        if (reversed)
         {
-            if (!opened)
+            if (moving)
             {
-                if (((baseAngle - offsetAngle) - currentAngle) > 0)
+                if (!opened)
                 {
-                    Debug.Log("Opened Door");
-                    opened = true;
-                    moving = false;
+                    if (((baseAngle - offsetAngle) - currentAngle) < 0)
+                    {
+                        Debug.Log("Opened Door");
+                        opened = true;
+                        moving = false;
+                    }
+                    else
+                    {
+                        currentAngle += Time.deltaTime * rotationSpeed;
+                        porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
+                    }
                 }
                 else
                 {
-                    currentAngle -= Time.deltaTime * rotationSpeed;
-                    porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
-                }
-            }
-            else
-            {
-                if ((baseAngle - currentAngle) < 0)
-                {
-                    opened = false;
-                    moving = false;
-                }
-                else
-                {
-                    currentAngle += Time.deltaTime * rotationSpeed;
-                    porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
+                    if ((baseAngle - currentAngle) > 0)
+                    {
+                        opened = false;
+                        moving = false;
+                    }
+                    else
+                    {
+                        currentAngle -= Time.deltaTime * rotationSpeed;
+                        porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
+                    }
                 }
             }
         }
+        else
+        {
+            if (moving)
+            {
+                if (!opened)
+                {
+                    if (((baseAngle - offsetAngle) - currentAngle) > 0)
+                    {
+                        Debug.Log("Opened Door");
+                        opened = true;
+                        moving = false;
+                    }
+                    else
+                    {
+                        currentAngle -= Time.deltaTime * rotationSpeed;
+                        porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
+                    }
+                }
+                else
+                {
+                    if ((baseAngle - currentAngle) < 0)
+                    {
+                        opened = false;
+                        moving = false;
+                    }
+                    else
+                    {
+                        currentAngle += Time.deltaTime * rotationSpeed;
+                        porteref.transform.eulerAngles = new Vector3(porteref.transform.eulerAngles.x, currentAngle, porteref.transform.eulerAngles.z);
+                    }
+                }
+            }
+        }
+        
     }
 }

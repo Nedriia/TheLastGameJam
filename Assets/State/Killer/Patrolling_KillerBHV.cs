@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Patrolling_KillerBHV : KillerStateMachine_Controller
 {
-    List<Vector3> positionsToPatroll;
+    public List<Vector3> positionsToPatroll;
     // How many points inside of the Area to patroll is going to Go
     public int maxPositionsPatrolling, minPositionsPatrolling;
     public float detectionDistancePoints;
@@ -15,11 +16,15 @@ public class Patrolling_KillerBHV : KillerStateMachine_Controller
 
     public float patrollingSpeed = 3.5f;
 
+    public NavMeshPath navMeshPath;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Get_CharacterController(animator);
-        
+
+        navMeshPath = new NavMeshPath();
+
         //Setting up the random points where the killer will go (inside a BoxCollider)
         positionsToPatroll = new List<Vector3>();
         int index = Random.Range(0, killerController.patrollingAreas.Length);
@@ -40,11 +45,28 @@ public class Patrolling_KillerBHV : KillerStateMachine_Controller
     {
         if (positionsToPatroll.Count > 0 && !checkingPoint)
         {
-            if (Vector3.Distance(killerController.transform.position, positionsToPatroll[0]) < detectionDistancePoints)
+            killerController.GetAgent().CalculatePath(positionsToPatroll[0], navMeshPath);
+            if (navMeshPath.status == NavMeshPathStatus.PathComplete)
             {
-                checkingPoint = true;
+                if (Vector3.Distance(killerController.transform.position, positionsToPatroll[0]) < detectionDistancePoints)
+                {
+                    checkingPoint = true;
+                }
             }
-
+            else
+            {
+                delayPointsTmp = 0;
+                checkingPoint = false;
+                positionsToPatroll.RemoveAt(0);
+                if (positionsToPatroll.Count == 0)
+                {
+                    animator.SetBool("isPatrolling", false);
+                }
+                else
+                {
+                    killerController.GetAgent().SetDestination(positionsToPatroll[0]);
+                }
+            }
         }else if (positionsToPatroll.Count == 0 && !checkingPoint)
         {
             animator.SetBool("isPatrolling", false);
